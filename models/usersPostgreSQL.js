@@ -20,23 +20,19 @@ const createUser = async (user) => {
         nombre,
         correo,
         contrasena,
-        preguntarc,
-        respuestarc
     } = user;
 
     const pool = await getConnection();
 
     const result = await pool.query(`
         INSERT INTO users
-        (nombre, correo, contrasena, preguntarc, respuestarc)
-        VALUES ($1, $2, $3, $4, $5)
+        (nombre, correo, contrasena)
+        VALUES ($1, $2, $3)
         RETURNING id
     `, [
         nombre,
         correo,
         contrasena,
-        preguntarc,
-        respuestarc
     ]);
 
     return result.rows[0].id;

@@ -33,8 +33,6 @@ formulario.addEventListener("submit", async (evento) => {
         nombre: document.getElementById("nombre").value,
         correo: document.getElementById("correo").value,
         contrasena: document.getElementById("contrasena").value,
-        preguntarc: document.getElementById("preguntarc").value,
-        respuestarc: document.getElementById("respuestarc").value
     };
 
     const respuesta = await fetch("/api/postgresql/users", {
