@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nombre": "Jesús",
+        "carrera": "Telemática"
+    },
+    {
+        "id": 2,
+        "nombre": "Ana",
+        "carrera": "Sistemas"
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos",
+        "carrera": "Informática"
+    }
+]
