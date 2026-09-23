@@ -1,6 +1,6 @@
 async function cargarUsuarios() {
 
-    const respuesta = await fetch("/api/sqlserver/users");
+    const respuesta = await fetch("/api/postgresql/users");
 
     const usuarios = await respuesta.json();
 
@@ -37,7 +37,7 @@ formulario.addEventListener("submit", async (evento) => {
         respuestarc: document.getElementById("respuestarc").value
     };
 
-    const respuesta = await fetch("/api/sqlserver/users", {
+    const respuesta = await fetch("/api/postgresql/users", {
 
         method: "POST",
 
